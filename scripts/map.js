@@ -260,6 +260,8 @@ $(window).on('load', function() {
     }
 
     completePoints = true;
+    markers.clearLayers();
+
     return group;
   }
 
