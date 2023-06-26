@@ -89,7 +89,7 @@ $(window).on('load', function() {
       for (var i in groups) {
         var name = groups[i];
         layers[name] = L.layerGroup();
- //       layers[name].addTo(map);
+        layers[name].addTo(map);
       }
     }
     return layers;
@@ -153,11 +153,11 @@ $(window).on('load', function() {
       if (clusters) {
         // Add multilayer cluster support
         multilayerClusterSupport = L.markerClusterGroup.layerSupport();
-//        multilayerClusterSupport.addTo(map);
+        multilayerClusterSupport.addTo(map);
 
         for (i in layers) {
           multilayerClusterSupport.checkIn(layers[i]);
-  //        layers[i].addTo(map);
+          layers[i].addTo(map);
         }
       }
 
