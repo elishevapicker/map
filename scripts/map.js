@@ -157,7 +157,7 @@ $(window).on('load', function() {
 
         for (i in layers) {
           multilayerClusterSupport.checkIn(layers[i]);
-          layers[i].addTo(map);
+  //        layers[i].addTo(map);
         }
       }
 
